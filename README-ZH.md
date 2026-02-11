@@ -1,12 +1,12 @@
-### 安装
+## 安装
 
 ```bash
 > npm install @sharedcomponents/vue
 ```
 
-### 使用
+## 使用
 
-## 向其他应用/页面共享组件
+### 向其他应用/页面共享组件
 main.js
 ```
 import SharedComponents from '@sharedcomponents/vue'
@@ -29,7 +29,7 @@ SharedComponents.hooks((app) => {
 SharedComponents.register(import('path/to/component/vue/file'), { name: 'sharedComponentName' })
 ```
 
-## 使用其他应用/页面共享的组件
+### 使用其他应用/页面共享的组件
 view.vue
 ```
 <template>

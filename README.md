@@ -1,12 +1,12 @@
-### Install
+## Install
 
 ```bash
 > npm install @sharedcomponents/vue
 ```
 
-### Usage
+## Usage
 
-## Share component to other microapps/pages
+### Share component to other microapps/pages
 main.js
 ```
 import SharedComponents from '@sharedcomponents/vue'
@@ -29,7 +29,7 @@ SharedComponents.hooks((app) => {
 SharedComponents.register(import('path/to/component/vue/file'), { name: 'sharedComponentName' })
 ```
 
-## Usage shared component from other microapps/pages
+### Usage shared component from other microapps/pages
 view.vue
 ```
 <template>
