@@ -1,7 +1,7 @@
 ### Install
 
 ```bash
-> npm install vue-shared-components
+> npm install @sharedcomponents/vue
 ```
 
 ### Usage
@@ -9,7 +9,7 @@
 ## Share component to other microapps/pages
 main.js
 ```
-import SharedComponents from 'vue-shared-components'
+import SharedComponents from '@sharedcomponents/vue'
 
 SharedComponents.register(import('path/to/component/vue/file'), { name: 'sharedComponentName' })
 ```
@@ -17,7 +17,7 @@ SharedComponents.register(import('path/to/component/vue/file'), { name: 'sharedC
 | If you used some plugins in your shared component (like vue router)
 main.js
 ```
-import SharedComponents from 'vue-shared-components'
+import SharedComponents from '@sharedcomponents/vue'
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 SharedComponents.hooks((app) => {
@@ -37,7 +37,7 @@ view.vue
 </template>
 
 <script setup>
-	import SharedComponents from 'vue-shared-components'
+	import SharedComponents from '@sharedcomponents/vue'
 
 	const SharedComponent = SharedComponents.get('sharedComponentName').component
 </script>

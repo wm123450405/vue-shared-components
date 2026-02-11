@@ -1,7 +1,7 @@
 ### 安装
 
 ```bash
-> npm install vue-shared-components
+> npm install @sharedcomponents/vue
 ```
 
 ### 使用
@@ -9,7 +9,7 @@
 ## 向其他应用/页面共享组件
 main.js
 ```
-import SharedComponents from 'vue-shared-components'
+import SharedComponents from '@sharedcomponents/vue'
 
 SharedComponents.register(import('path/to/component/vue/file'), { name: 'sharedComponentName' })
 ```
@@ -17,7 +17,7 @@ SharedComponents.register(import('path/to/component/vue/file'), { name: 'sharedC
 | 如果组件使用了vue的其他插件，如路由
 main.js
 ```
-import SharedComponents from 'vue-shared-components'
+import SharedComponents from '@sharedcomponents/vue'
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 SharedComponents.hooks((app) => {
@@ -37,7 +37,7 @@ view.vue
 </template>
 
 <script setup>
-	import SharedComponents from 'vue-shared-components'
+	import SharedComponents from '@sharedcomponents/vue'
 
 	const SharedComponent = SharedComponents.get('sharedComponentName').component
 </script>

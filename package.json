@@ -1,5 +1,5 @@
 {
-  "name": "vue-shared-components",
+  "name": "@sharedcomponents/vue",
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
@@ -7,9 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "@sharedcomponents",
   "license": "ISC",
   "packageManager": "pnpm@10.29.2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wm123450405/vue-shared-components.git"
+  },
   "peerDependencies": {
     "vue": "^3.0.0"
   }
